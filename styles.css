@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    background-color: #ececec;
+}
+
+h1 {
+    font-family: 'Kaushan Script';
+    font-weight: 100;
+    margin: 0;
+    font-size: 42px;
+}
+
+h2 {
+    font-family: 'Kaushan Script';
+    font-weight: 100;
+    font-size: 30px;
+    color: #22202D;
+}
+
+h3 {
+    font-family: 'Kaushan Script';
+    font-weight: 100;
+    color: #22202D;
+}
+
+p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494553;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background-color: #6575E8;
+    color: white;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#cabecalho p {
+    margin: 0px;
+    width: 100%;
+    color: white;
+}
+
+#verdade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+#verdade img {
+    width: 366px;
+    height: auto;
+    border: 10px solid rgb(194, 194, 194);
+    padding: 5px;
+}
+
+.colunas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.letra {
+    max-height: 300px;
+    overflow: auto;
+    background-color: white;
+    flex: 2;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.letra p:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+#musica {
+    flex: 3;
+}
+
+#hoje {
+    flex: 2;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    background-color: #F5C9F2;
+    border: 2px solid #DF55D7;
+    padding: 16px;
+}
+
+#hoje h2 {
+    text-align: center;
+}
+
+#hoje img {
+    width: 130px;
+    height: 130px;
+}
+
+#hoje img:hover {
+    transform: scale(1.1);
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.destacado {
+    background-color: #F5C9F2;
+    border: 2px solid #d4a6d1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #23232e;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
+footer small {
+    color: #F5C9F2;
+}
+
+@media (max-width: 876px) {
+
+    #verdade img {
+        width: 75%;
+        align-self: center;
+    }
+
+    .colunas {
+        flex-wrap: wrap;
+    }
+    
+    #verdade {
+        flex-wrap: wrap;
+    }
+}
